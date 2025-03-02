@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Object Creation Examples</title>
+    <script src="constructorFunctions.js" defer></script>
+    <script src="factoryFunctions.js" defer></script>
+    <script src="prototypes.js" defer></script>
+</head>
+
+<body>
+    <h1>JavaScript Object Creation Examples</h1>
+    <h2>Constructor Function Example</h2>
+    <p>Open the console to see the output of the constructor function example.</p>
+
+    <h2>Factory Function Example</h2>
+    <p>Open the console to see the output of the factory function example.</p>
+
+    <h2>Prototype Inheritance Example</h2>
+    <p>Open the console to see the output of the prototype inheritance example.</p>
+
+    <script>
+        // Logging the results from constructorFunctions.js
+        const person1 = new Person('John Doe', 30, 'Software Developer');
+        console.log('Constructor Function Example:');
+        console.log('Name:', person1.name);
+        console.log('Age:', person1.age);
+        console.log('Occupation:', person1.occupation);
+
+        // Logging the results from factoryFunctions.js
+        const person2 = createPerson('Jane Smith', 25, 'Graphic Designer');
+        console.log('Factory Function Example:');
+        console.log('Name:', person2.name);
+        console.log('Age:', person2.age);
+        console.log('Occupation:', person2.occupation);
+
+        // Logging the results from prototypes.js
+        const animal1 = new Animal('Leo', 'Lion');
+        console.log('Prototype Inheritance Example:');
+        console.log(animal1.describe());
+    </script>
+</body>
+
+</html>
