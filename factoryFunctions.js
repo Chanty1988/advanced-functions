@@ -1,16 +1,14 @@
-// Define a factory function for creating Person objects
-function createPerson(name, age, occupation) {
-  return {
-    name: name,
-    age: age,
-    occupation: occupation
-  };
+// Factory Function for Person
+function createPerson(name, age) {
+    return {
+        name,
+        age,
+        greet() {
+            console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+        }
+    };
 }
 
-// Create an object using the factory function
-const person1 = createPerson('John Doe', 30, 'Software Developer');
-
-// Log the properties of the created object
-console.log('Name:', person1.name);
-console.log('Age:', person1.age);
-console.log('Occupation:', person1.occupation);
+// Create an object
+const person2 = createPerson("Cater", 25);
+person2.greet(); // Output: Hello, my name is Cater and I am 25 years old.

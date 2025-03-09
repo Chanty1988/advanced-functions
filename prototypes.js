@@ -1,16 +1,14 @@
-// Define a constructor function for creating Animal objects
-function Animal(name, species) {
-  this.name = name;
-  this.species = species;
+// Constructor Function for Animal
+function Animal(type, sound) {
+    this.type = type;
+    this.sound = sound;
 }
 
-// Add a method to the Animal prototype
-Animal.prototype.describe = function() {
-  return `${this.name} is a ${this.species}.`;
+// Adding a method to the prototype
+Animal.prototype.makeSound = function() {
+    console.log(`${this.type} says ${this.sound}`);
 };
 
-// Instantiate an object using the constructor function
-const animal1 = new Animal('Leo', 'Lion');
-
-// Use the prototype method
-console.log(animal1.describe());
+// Instantiate an object
+const dog = new Animal("Dog", "Woof");
+dog.makeSound(); // Output: Dog says Woof
