@@ -11,4 +11,5 @@ function createPerson(name, age) {
 
 // Create an object
 const person2 = createPerson("Cater", 25);
-person2.greet(); // Output: Hello, my name is Cater and I am 25 years old.
+person2.greet(); // Output: Hello, my name is Carter and I am 25 years old.
+
